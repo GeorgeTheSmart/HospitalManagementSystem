@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>YSG Hospitals</title>
+   
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="app/css/styles.css">
+   <style>
+      /* Custom styling to resemble YSG’s aesthetic */
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #f8f9fa;
+         color: #333;
+      }
+      .navbar {
+         background-color: #0056a4;
+      }
+      .navbar-brand, .navbar-nav .nav-link {
+         color: #fff !important;
+      }
+      .hero-section {
+         background: url('https://www.mayoclinic.org/-/media/kq/media/images/hospitals-surgeon-patient.jpg') center/cover;
+         color: #fff;
+         padding: 80px 0;
+         text-align: center;
+      }
+      .hero-section h1 {
+         font-size: 2.5rem;
+         font-weight: bold;
+      }
+      .hero-section p {
+         font-size: 1.2rem;
+      }
+      .feature-card {
+         transition: transform 0.3s;
+      }
+      .feature-card:hover {
+         transform: scale(1.05);
+      }
+      footer {
+         background-color: #0056a4;
+         color: #fff;
+         padding: 20px 0;
+         text-align: center;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+         <a class="navbar-brand" href="#">YSG Hospitals</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#patient">Patient</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#doctor">Doctor</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#appointment">Appointment</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="hero-section">
+      <div class="container">
+         <h1>Welcome to YSG Hospitals</h1>
+         <p>Your health, our priority. Dedicated to providing the best care.</p>
+         <a href="#services" class="btn btn-light btn-lg mt-3">Learn More</a>
+      </div>
+   </section>
+
+   <!-- Main Content Section -->
+   <section class="container my-5" id="services">
+      <div class="row text-center">
+         <!-- Patient Widget -->
+         <div class="col-lg-4 col-md-6 mb-4">
+            <a href="patient.html">
+               <div class="card feature-card shadow-sm">
+                  <div class="card-body">
+                     <i class="fas fa-user-md fa-3x mb-3 text-primary"></i>
+                     <h5 class="card-title">Patient</h5>
+                     <p>Explore services and personalized care for our patients.</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+
+         <!-- Doctor Widget -->
+         <div class="col-lg-4 col-md-6 mb-4">
+            <a href="doctor.html">
+               <div class="card feature-card shadow-sm">
+                  <div class="card-body">
+                     <i class="fas fa-user-nurse fa-3x mb-3 text-danger"></i>
+                     <h5 class="card-title">Doctor</h5>
+                     <p>Meet our qualified and dedicated healthcare professionals.</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+
+         <!-- Appointment Widget -->
+         <div class="col-lg-4 col-md-6 mb-4">
+            <a href="appointment.html">
+               <div class="card feature-card shadow-sm">
+                  <div class="card-body">
+                     <i class="fas fa-calendar-alt fa-3x mb-3 text-primary"></i>
+                     <h5 class="card-title">Appointment</h5>
+                     <p>Schedule your appointments with ease and convenience.</p>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+      <div class="container">
+         <p>&copy; 2024 - YSG Hospitals | Dedicated to your health and wellbeing</p>
+      </div>
+   </footer>
+
+   <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

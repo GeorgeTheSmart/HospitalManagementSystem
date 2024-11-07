@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App + jQuery">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <title>YSG Hospitals</title>
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+   <link rel="stylesheet" href="vendor/animate.css/animate.min.css">
+   <link rel="stylesheet" href="vendor/whirl/dist/whirl.css">
+   <link rel="stylesheet" href="app/css/bootstrap.css" id="bscss">
+   <link rel="stylesheet" href="app/css/app.css" id="maincss">
+   <link rel="stylesheet" href="app/css/styles.css">
+   <style>
+      a:hover{
+       text-decoration: none!important;
+      }
+
+   </style>
+</head>
+
+<body class="layout-h">
+   <div class="wrapper">
+      <header class="topnavbar-wrapper">
+         <nav role="navigation" class="navbar topnavbar">
+            <div class="navbar-header">
+               <a href="#/" class="navbar-brand">
+                  <div class="brand-logo">
+                    YSG Hospitals
+                  </div>
+                  <div class="brand-logo-collapsed">
+                     <img src="img/logo-single.png" alt="App Logo" class="img-responsive">
+                  </div>
+               </a>
+            </div>
+            <div class="nav-wrapper">
+            </div>
+            <form role="search" action="search.html" class="navbar-form">
+               <div class="form-group has-feedback">
+                  <input type="text" placeholder="Type and hit enter ..." class="form-control">
+                  <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
+               </div>
+               <button type="submit" class="hidden btn btn-default">Submit</button>
+            </form>
+         </nav>
+      </header>
+      <section>
+         <div class="content-wrapper">
+            <div class="content-heading">
+               Home
+               <small data-localize="dashboard.WELCOME"></small>
+            </div>
+            <div class="row">
+             <div class="row">
+               <div class="col-lg-4 col-md-6">
+                  <a href="patient.html">
+                  <div class="panel widget bg-success">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-success-dark pv-lg">
+                           <em class="icon-share fa-3x"></em>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="patientcount"></div>
+                           <div class="text-uppercase">Patient</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+               <div class="col-lg-4 col-md-6">
+                  <a href="doctor.html">
+                  <div class="panel widget bg-danger">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-danger-dark pv-lg">
+                           <em class="icon-star fa-3x"></em>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="doctorcount"></div>
+                           <div class="text-uppercase">Doctor</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+                  <div class="col-lg-4 col-md-6">
+                  <a href="appointment.html">
+                  <div class="panel widget bg-primary">
+                     <div class="row row-table">
+                        <div class="col-xs-4 text-center bg-primary-dark pv-lg">
+                           <em class="icon-star fa-3x"></em>
+                        </div>
+                        <div class="col-xs-8 pv-lg">
+                           <div class="h1 m0 text-bold" id="appointmentcount"></div>
+                           <div class="text-uppercase">Appointment</div>
+                        </div>
+                     </div>
+                  </div>
+                     </a>
+               </div>
+            </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <span>&copy; 2024 - YSG</span>
+      </footer>
+   </div>
+   <script src="vendor/modernizr/modernizr.custom.js"></script>
+   <script src="vendor/jquery/dist/jquery.js"></script>
+   <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+   <script src="vendor/jQuery-Storage-API/jquery.storageapi.js"></script>
+   <script src="vendor/jquery.easing/js/jquery.easing.js"></script>
+   <script src="vendor/animo.js/animo.js"></script>
+   <script src="vendor/jquery-localize-i18n/dist/jquery.localize.js"></script>
+   <script src="app/js/app.js"></script>
+   <script src="app/js/script.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
